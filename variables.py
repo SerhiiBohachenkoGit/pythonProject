@@ -5,7 +5,8 @@ a = None  # неопределенное значение
 # Numeric Type
 i: int = 100
 f: float = 1.10
-dec: decimal = 1.123
+dec: decimal = 1.12312312321321312321312
+com: complex = 3 + 7j
 
 # Text Sequence Type
 s: str = "Hello, i'm string"
@@ -24,3 +25,14 @@ fr: frozenset = {1, 2, 3, "a", "b", "c"}  # НЕИЗМЕНЯЕМОЕ МНОЖЕ�
 
 # Mapping Types
 d: dict = {"key": "value"}  # СЛОВАРЬ, ключ: значение. Не имеет порядка
+
+
+def numeric_type(i: int, f: float, dec: decimal, com: complex):
+    i.__add__()
+
+    f.as_integer_ratio()
+
+    print(dec)
+
+    com.real
+
