@@ -3,10 +3,10 @@ import decimal
 a = None  # неопределенное значение
 
 # Numeric Type
-i: int = 100
-f: float = 1.10
-dec: decimal = 1.12312312321321312321312
-com: complex = 3 + 7j
+i: int = 100   # целое число
+f: float = 1.10  # вещественное число (с плавающей запятой)
+dec: decimal = 1.1234567890  # фиксированная точность 10 знаков после запятой
+com: complex = 3 + 7j # комплексное число (число с мнимой  единицей)
 
 # Text Sequence Type
 s: str = "Hello, i'm string"
