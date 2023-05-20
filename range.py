@@ -1,3 +1,6 @@
 #  range(start, stop, step)
 
-l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for i in range(2, 200, 2):
+    print(i)
+
+print([x for x in range(2, 200, 2)])
