@@ -1,5 +1,9 @@
 from datetime import datetime
 
+"""
+Функция декоратор. Состоит из функции в функции и имеет следующий вид:
+"""
+
 
 def timeit(func):
     def wr():
@@ -10,7 +14,7 @@ def timeit(func):
     return wr
 
 
-@timeit
+@timeit  # Вызываем декоратор
 def one():
     l = []
     for i in range(10):
@@ -19,7 +23,7 @@ def one():
     return l
 
 
-@timeit
+@timeit  # Вызываем декоратор
 def two():
     l = [x for x in range(10) if x % 2 == 0]
     return l
